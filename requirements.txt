@@ -1,0 +1,5 @@
+anyio
+googletrans
+idna
+sniffio
+typing-extensions

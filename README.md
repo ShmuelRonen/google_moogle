@@ -2,6 +2,9 @@
 
 Google Moogle is a Google Translator node for ComfyUI that provides easy-to-use text translation capabilities directly within your ComfyUI workflows.
 
+![image](https://github.com/user-attachments/assets/1371b294-c65f-4547-8fbc-4bca77115368)
+
+
 ## Features
 
 - Translate text between multiple languages

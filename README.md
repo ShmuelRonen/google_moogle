@@ -62,11 +62,10 @@ pip install -r requirements.txt
 - ComfyUI
 - Python 3.8+
 - Dependencies listed in requirements.txt:
-  - anyio>=3.6.2
-  - googletrans==4.0.0-rc1
-  - idna>=3.4
-  - sniffio>=1.3.0
-  - typing-extensions>=4.5.0
+  - googletrans
+  - idna
+  - sniffio
+  - typing-extensions
 
 ## License
 

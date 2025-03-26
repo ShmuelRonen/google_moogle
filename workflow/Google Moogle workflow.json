@@ -1,0 +1,105 @@
+{
+  "id": "a80ae5aa-aa2c-4b40-94c1-95ccbf4d8902",
+  "revision": 0,
+  "last_node_id": 4,
+  "last_link_id": 2,
+  "nodes": [
+    {
+      "id": 3,
+      "type": "googletrans",
+      "pos": [
+        -1747.060546875,
+        67.8377914428711
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "translated_text",
+          "type": "STRING",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "googletrans"
+      },
+      "widgets_values": [
+        "Hello, how are you?",
+        "english",
+        "chinese"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "easy showAnything",
+      "pos": [
+        -1259.786865234375,
+        69.27859497070312
+      ],
+      "size": [
+        295.6763000488281,
+        145.28070068359375
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "shape": 7,
+          "type": "*",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-easy-use",
+        "ver": "3c37489c0ae0492b54a01320bedb3add82cd8370",
+        "Node name for S&R": "easy showAnything"
+      },
+      "widgets_values": [
+        "你好吗？"
+      ]
+    }
+  ],
+  "links": [
+    [
+      2,
+      3,
+      0,
+      4,
+      0,
+      "*"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1.7088742511245865,
+      "offset": [
+        2017.37904592774,
+        94.94349832179047
+      ]
+    },
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}

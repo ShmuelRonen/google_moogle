@@ -1,0 +1,15 @@
+[project]
+name = "google_moogle"
+description = "AGoogle Moogle is a Google Translator node for ComfyUI that provides easy-to-use text translation capabilities directly within your ComfyUI workflows."
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["anyio", "googletrans", "sniffio", "typing-extensions"]
+
+[project.urls]
+Repository = "https://github.com/ShmuelRonen/google_moogle"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "google_moogle"
+Icon = ""

@@ -1,6 +1,5 @@
 import googletrans
 import logging
-import asyncio
 
 class GoogletransNode:
     def __init__(self):
@@ -21,23 +20,11 @@ class GoogletransNode:
     FUNCTION = "do_translate"
     CATEGORY = "text"
 
-    async def translate_text(self, text, src, dest):
-        translator = googletrans.Translator()
-        return await translator.translate(str(text), src=src, dest=dest)
-
     def do_translate(self, input_text, source_language, destination_language, *args, **kwargs):
         try:
-            # Create new event loop for this thread
-            loop = asyncio.new_event_loop()
-            asyncio.set_event_loop(loop)
-            
-            # Run the translation
-            translated = loop.run_until_complete(
-                self.translate_text(input_text, source_language, destination_language)
-            )
-            
-            # Clean up
-            loop.close()
+            # Use synchronous translation - googletrans supports both sync and async
+            translator = googletrans.Translator()
+            translated = translator.translate(str(input_text), src=source_language, dest=destination_language)
             
             return (translated.text,)
         except Exception as e:
